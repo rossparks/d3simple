@@ -4,8 +4,10 @@ This is a sample web site showing how to create a d3 visualization that referenc
 
 Added redirect php for "index.php" for heroku
 
-I have created the site here:
+I have a created a heroku site here:
 https://d3test20181307.herokuapp.com/index.html
+
+I have a created a aerobatic site here:
 https://energetic-force.aerobaticapp.com/?__preview=laptop
 
 
