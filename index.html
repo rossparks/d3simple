@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Aerobatic d3 s3 Demo</title>
+  <meta name="description" content="This demo shows how to use create a d3 visualization with data stored on AWS s3">
+  <meta name="author" content="Aerobatic">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/site.js"></script>
+  <script script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+</head>
+<body class="code-snippets-visible">
+
+  <div class="navbar-spacer"></div>
+    <nav class="navbar">
+      <div class="container">
+        <a href="http://www.aerobatic.com"><img src="images/aerobatic_logo.png"></a>
+      </div>
+    </nav>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <section class="header">
+      <h1 class="title">d3 s3 demo</h1>
+    </section>
+
+    <!-- About this demo -->
+    <div class="docs-section" id="intro">
+      <p>This demo takes all Google AdWords <a href = "https://developers.google.com/adwords/api/docs/appendix/geotargeting">geographical targets</a>, groups them by country, and then plots them on a d3.js barchart. The geographical targets are read in from a .csv file that is stored on AWS s3. The file is 6.4Mb, so we'd rather not bloat our repo with the data. This becomes more important when we're dealing with multiple data file sources and / or larger sets of data.</p> 
+      <p>The source code for this demo can be found in this <a href="https://bitbucket.org/aerobatic/d3s3/src">Bitbucket repository</a></p>
+    </div>
+    
+    <!-- Example -->
+    <div class="docs-section examples" id="examples">
+      <h6 class="docs-header">Google AdWords Geographical Targets by Country</h6>
+      <div class="row example">
+          <div id="d3div" class="d3">
+            <script src='js/analysis.js'></script>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
