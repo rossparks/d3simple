@@ -1,6 +1,14 @@
-id: b314cc8d-2a6c-4df5-8b4f-bff64a9802cb
-deploy:
+--- 
+deploy: 
+  directory: "."
   ignore: []
-  directory: .
-plugins:
-  - name: webpage
+id: b314cc8d-2a6c-4df5-8b4f-bff64a9802cb
+plugins: 
+- name: s3-proxy
+  options: 
+    accessKeyId: $S3_ACCESS_KEY_ID
+    bucket: testgoogleadwordsford3
+    overrideCacheControl: max-age=2592000
+    region: us-west-2
+    secretAccessKey: $S3_SECRET_ACCESS_KEY
+  path: /s3-proxy
